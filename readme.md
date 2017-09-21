@@ -2,3 +2,10 @@
 
 Este é um repositório de códigos usado no livro HeadFirst C.
 Além de ser uma forma de utilizar o git e o github.
+
+# Capítulos
+
+* ## Capítulo 1
+	* Começando com C
+* ## Capítulo 2
+	* Memória e Ponteiros
