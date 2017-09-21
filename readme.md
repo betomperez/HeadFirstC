@@ -5,7 +5,10 @@ Além de ser uma forma de utilizar o git e o github.
 
 # Capítulos
 
-* ## Capítulo 1
+* #### Capítulo 1
 	* Começando com C
-* ## Capítulo 2
+* #### Capítulo 2
 	* Memória e Ponteiros
+	* Strings
+* #### Capítulo 3
+	* Criando Ferramentas Pequenas
