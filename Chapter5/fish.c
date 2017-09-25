@@ -1,10 +1,16 @@
 #include <stdio.h>
 
+struct preferences {
+	const char *food;
+	float exercise_hours;
+};
+
 struct fish {
 	const char *name;
 	const char *species;
 	int teeth;
 	int age;
+	struct preferences care;
 };
 
 void catalog(struct fish f)
@@ -19,8 +25,10 @@ void label(struct fish f)
 
 int main()
 {
-	struct fish snappy = {"Snappy", "Bagre", 10, 3};
+	struct fish snappy = {"Snappy", "Piranha", 10, 3, {"Meat", 7.5}};
 	catalog(snappy);
+	printf("%s likes to eat %s\n", snappy.name, snappy.care.food);
+	printf("%s likes to exercise for %.2f hours\n", snappy.name, snappy.care.exercise_hours);
 	label(snappy);
 	return 0;
 }
