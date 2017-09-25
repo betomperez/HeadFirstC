@@ -12,3 +12,5 @@ Além de ser uma forma de utilizar o git e o github.
 	* Strings
 * #### Capítulo 3
 	* Criando Ferramentas Pequenas
+* #### Capítulo 4
+	* Usando múltiplos arquivos fonte
