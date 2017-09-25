@@ -14,3 +14,5 @@ Além de ser uma forma de utilizar o git e o github.
 	* Criando Ferramentas Pequenas
 * #### Capítulo 4
 	* Usando múltiplos arquivos fonte
+* #### Capítulo 5
+	* Structs, unions e bitfields
