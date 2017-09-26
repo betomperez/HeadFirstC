@@ -2,14 +2,19 @@
 
 int main()
 {
+	island *start = NULL;
+	island *i = NULL;
+	island *next = NULL;
 	char name[80];
-	fgets(name, 80, stdin);
-	island *p_island0 = create(name);
-	fgets(name, 80, stdin);
-	island *p_island1 = create(name);
-	p_island0->next = p_island1;
-	
-	display(p_island0);
+	for(; fgets(name, 80, stdin) != NULL; i = next) {
+		next = create(name);
+		if (start == NULL)
+			start = next;
+		if (i != NULL)
+			i->next = next;
+	}
+	display(start);
+	release(start);
 }
 
 void display(island *start)
@@ -28,4 +33,15 @@ island* create(char *name)
 	i->closes = "17:00";
 	i->next = NULL;
 	return i;
+}
+
+void release(island *start)
+{
+	island *i = start;
+	island *next = NULL;
+	for(; i != NULL; i = next) {
+		next = i->next;
+		free(i->name);
+		free(i);
+	}
 }

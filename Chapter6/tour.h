@@ -11,4 +11,5 @@ typedef struct island {
 
 void display(island *start);
 island* create(char *name);
+void release(island *start);
 
