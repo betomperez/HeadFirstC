@@ -16,3 +16,5 @@ Além de ser uma forma de utilizar o git e o github.
 	* Usando múltiplos arquivos fonte
 * #### Capítulo 5
 	* Structs, unions e bitfields
+* #### Capítulo 6
+	* Estruturas de dados e memória dinâmica
